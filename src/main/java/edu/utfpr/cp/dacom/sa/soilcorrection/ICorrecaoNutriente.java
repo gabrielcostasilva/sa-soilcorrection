@@ -38,4 +38,19 @@ public interface ICorrecaoNutriente<T extends IFonteNutriente> {
 
         return fonteNutriente.getNutrientesAdicionais();
     }
+
+    public default double calculaEficienciaNutriente(
+        double qtdeNutrienteAdicionar, 
+        double eficienciaNutriente) {
+
+        if (qtdeNutrienteAdicionar <= 0) {
+            throw new IllegalArgumentException();
+        }
+
+        if (eficienciaNutriente <= 0) {
+            throw new IllegalArgumentException();
+        }
+
+        return qtdeNutrienteAdicionar / eficienciaNutriente;
+    }
 }

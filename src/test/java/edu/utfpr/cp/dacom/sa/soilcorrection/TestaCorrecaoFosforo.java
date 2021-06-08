@@ -34,7 +34,7 @@ public class TestaCorrecaoFosforo {
         var correcaoFosforo = new CorrecaoFosforo();
 
         var necessidadeFosforo = correcaoFosforo
-                    .calculaNecessidadeP2O5(teorFosforoAdicionarP2O5, 0.7);
+                    .calculaEficienciaNutriente(teorFosforoAdicionarP2O5, 0.7);
 
         assertEquals(22.31114285714286, necessidadeFosforo);
     }
