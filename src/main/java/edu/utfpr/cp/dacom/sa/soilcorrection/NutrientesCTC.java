@@ -1,6 +1,6 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
-public final class Nutrientes {
+public final class NutrientesCTC {
 
     private double fosforo;
     private double potassio;
@@ -10,7 +10,7 @@ public final class Nutrientes {
     private double aluminio;
     private double aluminioHidrogenio;
 
-    public Nutrientes(
+    public NutrientesCTC(
             double fosforo,
             double potassio,
             double calcio,
