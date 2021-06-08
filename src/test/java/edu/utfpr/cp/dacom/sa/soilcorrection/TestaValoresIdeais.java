@@ -3,7 +3,7 @@ package edu.utfpr.cp.dacom.sa.soilcorrection;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class NewEmptyJUnitTest {
+public class TestaValoresIdeais {
 
         @Test
         public void testaValoresIdeaisArgiloso() {
