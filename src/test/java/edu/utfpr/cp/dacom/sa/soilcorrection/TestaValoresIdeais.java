@@ -7,40 +7,40 @@ public class TestaValoresIdeais {
 
         @Test
         public void testaValoresIdeaisArgiloso() {
-                assertEquals(new NutrientesCTC(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).getFosforo(),
-                                TexturaSolo.ARGILOSO.calculaValorIdeal().getFosforo());
+                assertEquals(new NutrientesCTC(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).fosforo(),
+                                TexturaSolo.ARGILOSO.calculaValorIdeal().fosforo());
 
-                assertEquals(new NutrientesCTC(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).getAluminio(),
-                                TexturaSolo.ARGILOSO.calculaValorIdeal().getAluminio());
+                assertEquals(new NutrientesCTC(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).aluminio(),
+                                TexturaSolo.ARGILOSO.calculaValorIdeal().aluminio());
 
-                assertEquals(new NutrientesCTC(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).getAluminioHidrogenio(),
-                                TexturaSolo.ARGILOSO.calculaValorIdeal().getAluminioHidrogenio());
-                assertEquals(new NutrientesCTC(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).getCalcio(),
-                                TexturaSolo.ARGILOSO.calculaValorIdeal().getCalcio());
-                assertEquals(new NutrientesCTC(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).getEnxofre(),
-                                TexturaSolo.ARGILOSO.calculaValorIdeal().getEnxofre());
-                assertEquals(new NutrientesCTC(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).getMagnesio(),
-                                TexturaSolo.ARGILOSO.calculaValorIdeal().getMagnesio());
-                assertEquals(new NutrientesCTC(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).getPotassio(),
-                                TexturaSolo.ARGILOSO.calculaValorIdeal().getPotassio());
+                assertEquals(new NutrientesCTC(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).aluminioHidrogenio(),
+                                TexturaSolo.ARGILOSO.calculaValorIdeal().aluminioHidrogenio());
+                assertEquals(new NutrientesCTC(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).calcio(),
+                                TexturaSolo.ARGILOSO.calculaValorIdeal().calcio());
+                assertEquals(new NutrientesCTC(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).enxofre(),
+                                TexturaSolo.ARGILOSO.calculaValorIdeal().enxofre());
+                assertEquals(new NutrientesCTC(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).magnesio(),
+                                TexturaSolo.ARGILOSO.calculaValorIdeal().magnesio());
+                assertEquals(new NutrientesCTC(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).potassio(),
+                                TexturaSolo.ARGILOSO.calculaValorIdeal().potassio());
         }
 
         @Test
         public void testaValoresIdeaisTexturaMedia() {
-                assertEquals(new NutrientesCTC(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).getFosforo(),
-                                TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().getFosforo());
-                assertEquals(new NutrientesCTC(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).getAluminio(),
-                                TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().getAluminio());
-                assertEquals(new NutrientesCTC(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).getAluminioHidrogenio(),
-                                TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().getAluminioHidrogenio());
-                assertEquals(new NutrientesCTC(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).getCalcio(),
-                                TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().getCalcio());
-                assertEquals(new NutrientesCTC(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).getEnxofre(),
-                                TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().getEnxofre());
-                assertEquals(new NutrientesCTC(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).getMagnesio(),
-                                TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().getMagnesio());
-                assertEquals(new NutrientesCTC(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).getPotassio(),
-                                TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().getPotassio());
+                assertEquals(new NutrientesCTC(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).fosforo(),
+                                TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().fosforo());
+                assertEquals(new NutrientesCTC(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).aluminio(),
+                                TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().aluminio());
+                assertEquals(new NutrientesCTC(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).aluminioHidrogenio(),
+                                TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().aluminioHidrogenio());
+                assertEquals(new NutrientesCTC(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).calcio(),
+                                TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().calcio());
+                assertEquals(new NutrientesCTC(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).enxofre(),
+                                TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().enxofre());
+                assertEquals(new NutrientesCTC(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).magnesio(),
+                                TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().magnesio());
+                assertEquals(new NutrientesCTC(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).potassio(),
+                                TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().potassio());
 
         }
 
