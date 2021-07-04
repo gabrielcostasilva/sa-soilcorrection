@@ -1,5 +1,7 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.interfaces.Conversao;
+
 public class ConverteCMolcDm3EmMgDm3 
         implements Conversao<Double, Double> {
 

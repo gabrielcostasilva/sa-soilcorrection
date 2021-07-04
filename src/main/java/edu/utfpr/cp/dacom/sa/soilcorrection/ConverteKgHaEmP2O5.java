@@ -1,5 +1,7 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.interfaces.Conversao;
+
 public class ConverteKgHaEmP2O5 implements Conversao<Double, Double> {
 
     @Override

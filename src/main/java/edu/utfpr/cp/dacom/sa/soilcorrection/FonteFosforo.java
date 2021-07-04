@@ -1,5 +1,6 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.interfaces.IFonteNutriente;
 import java.util.Set;
 
 public enum FonteFosforo implements IFonteNutriente {
