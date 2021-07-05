@@ -66,16 +66,16 @@ public class TestaCorrecaoFosforo {
             );
         }
         
-        @Test
-        public void testaNutrientesAdicionais() {
+    @Test
+    public void testaNutrientesAdicionais() {
 
-            var correcaoFosforo = new CorrecaoFosforo();
-            
-            var qtdeFosforoAplicar = 123.95079365079366;
+        var correcaoFosforo = new CorrecaoFosforo();
+        
+        var qtdeFosforoAplicar = 123.95079365079366;
 
-            assertEquals(2, correcaoFosforo.getNutrientesAdicionais(
-                                                qtdeFosforoAplicar, 
-                                                FonteFosforo.SUPERFOSFATO_SIMPLES).size());
+        assertEquals(2, correcaoFosforo.getNutrientesAdicionais(
+                                            qtdeFosforoAplicar, 
+                                            FonteFosforo.SUPERFOSFATO_SIMPLES).size());
     }
 
 }
