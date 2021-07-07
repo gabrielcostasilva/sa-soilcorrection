@@ -18,6 +18,6 @@ Checkout published releases to follow the project progress.
 
 ### As of June, 2021
 
-About 30 students worked on this project in its first cycle, started in March, 2021. During this period, students learned on the impact of development principles on software architecture. They mainly practiced DRY and SOLID principles. They understood how modern programming language constructs can facilitate the archicture maintenance. They used UML to understand each other's architectural structures, focusing on classes (static structure) and message exchange (dynamic structure).
+About 30 students worked on this project in its first cycle, started in March, 2021. During this period, students learned on the impact of development principles on software architecture. They mainly practiced DRY and SOLID principles. They understood how modern programming language constructs can facilitate the architecture maintenance. They used UML to understand each other's architectural structures, focusing on classes (static structure) and message exchange (dynamic structure).
 
 In addition, they practiced software testing, TDD, VCS with Git/Github, and software development with Java.
