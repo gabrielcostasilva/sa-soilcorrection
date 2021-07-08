@@ -4,12 +4,13 @@ public class CorrecaoCalcioMagnesio implements ICorrecaoNutriente<FonteCalcioMag
 
     public double teorCaO(
         double calcio,
+        double fosfatagem,
         double participacaoCTCExistente,
         double participacaoCTCDesejada
     ) {
         return ((calcio * participacaoCTCDesejada)
                     / participacaoCTCExistente
-            ) - calcio;
+            ) - (calcio - fosfatagem);
     }
 
     public double calculaValorDeCorrecaoCalcio(
