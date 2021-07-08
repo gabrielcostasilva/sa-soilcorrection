@@ -2,17 +2,17 @@ package edu.utfpr.cp.dacom.sa.soilcorrection;
 
 public class CorrecaoCalcioMagnesio implements ICorrecaoNutriente<FonteCalcioMagnesio> {
     
-    public atribuicaoDeCalcio() {
-        double calcio = 5.76;
-        double participacaoCTCExistente = 44.7;
-        double participacaoCTCDesejada = 55.0;
-        double calcioTotal = 1.038;
-        double quantidadeAditiva = 1.63;
+    // public atribuicaoDeCalcio() {
+    //     double calcio = 5.76;
+    //     double participacaoCTCExistente = 44.7;
+    //     double participacaoCTCDesejada = 55.0;
+    //     double calcioTotal = 1.038;
+    //     double quantidadeAditiva = 1.63;
 
-        double calcioHa = calculaValorDeCorrecaoCalcio(calcio, participacaoCTCExistente, participacaoCTCDesejada);
+    //     double calcioHa = calculaValorDeCorrecaoCalcio(calcio, participacaoCTCExistente, participacaoCTCDesejada);
 
-        return calcioHa;
-    }
+    //     return calcioHa;
+    // }
     
     public double calculaValorDeCorrecaoCalcio(
         double calcio,
