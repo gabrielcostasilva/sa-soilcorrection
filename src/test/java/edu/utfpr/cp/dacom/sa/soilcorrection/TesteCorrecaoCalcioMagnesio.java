@@ -48,7 +48,7 @@ public class TestaCorrecaoCalcioMagnesio {
         // Equilíbrio e Correção na CTC: H5
         double ha = 70.0;
 
-        assertEquals(6,2436, correcaoCalcioMagnesio.calculaQuantidadeTotalCorretivo(quantidade, ha));
+        assertEquals(6.2436, correcaoCalcioMagnesio.calculaQuantidadeTotalCorretivo(quantidade, ha));
     }
 
     @Test

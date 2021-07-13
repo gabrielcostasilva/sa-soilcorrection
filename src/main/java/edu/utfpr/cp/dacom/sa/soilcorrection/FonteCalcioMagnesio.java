@@ -1,8 +1,6 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
 public enum FonteCalcioMagnesio implements IFonteNutriente {
-    // CALCARIO_DOLOMITICO(0.55, Set.of(new NutrienteAdicional(NomeNutrienteAdicional.CALCIO, 0.34), new NutrienteAdicional(NomeNutrienteAdicional.MAGNESIO, 0.1))),
-    // CALCARIO_CALCITICO(0.07, Set.of(new NutrienteAdicional(NomeNutrienteAdicional.CALCIO, 0.4))),
 
     private final double teorFonte;
     private final Set<NutrienteAdicional> nutrientesAdicionais;
