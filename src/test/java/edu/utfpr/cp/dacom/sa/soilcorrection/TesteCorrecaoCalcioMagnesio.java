@@ -21,7 +21,7 @@ public class TestaCorrecaoCalcioMagnesio {
         // Memória de Cálculo: I105
         double fosfatagem = 0.017;
 
-        assertEquals(1.31024832,
+        assertEquals(1.3442483221477,
                 correcaoCalcioMagnesio.teorCaO(calcio, fosfatagem, participacaoCTCExistente, participacaoCTCDesejada));
     }
     
@@ -35,7 +35,7 @@ public class TestaCorrecaoCalcioMagnesio {
         // Equilíbrio e Correção na CTC: C53
         double prnt = 70.0;
 
-        assertEquals(1.85, correcaoCalcioMagnesio.calculaQuantidadeCorretivo(quantidade, prnt));
+        assertEquals(1.8428571428571, correcaoCalcioMagnesio.calculaQuantidadeCorretivo(quantidade, prnt));
     }
 
     @Test
@@ -46,7 +46,7 @@ public class TestaCorrecaoCalcioMagnesio {
         // Memória de Cálculo: F113/G113
         double quantidade = 1.29;
         // Equilíbrio e Correção na CTC: H5
-        double ha = 70.0;
+        double ha = 4.84;
 
         assertEquals(6.2436, correcaoCalcioMagnesio.calculaQuantidadeTotalCorretivo(quantidade, ha));
     }
@@ -74,8 +74,52 @@ public class TestaCorrecaoCalcioMagnesio {
 
         // Memória de Cálculo
 
-        assertEquals(54.850646, correcaoCalcioMagnesio.calculaValorDeCorrecaoCalcio(calcio, potassio,
-                magnesio, hAl, fosfatagem, participacaoCTCExistente, participacaoCTCDesejada));
+        assertEquals(55.114416774, correcaoCalcioMagnesio.calculaValorDeCorrecaoCalcio(calcio, potassio, magnesio, hAl,
+                fosfatagem, participacaoCTCExistente, participacaoCTCDesejada));
+    }
+    
+    // Testes de Cálculo para Valores R$
+
+    @Test
+    public void testaCustoPorAlqueire() {
+        // Instanciando classe CorrecaoCalcioMagnesio
+        var correcaoCalcioMagnesio = new CorrecaoCalcioMagnesio();
+
+        // Memória de Cálculo: A115/B115
+        double toneladasPorHa = 1.85;
+        // Equilíbrio e Correção na CTC: K55/L55
+        double valorPorTonelada = 500.00;
+
+        assertEquals(2238.5,
+                correcaoCalcioMagnesio.calculaCustoPorAlqueire(toneladasPorHa, valorPorTonelada));
+    }
+
+    @Test
+    public void testaCustoTotal() {
+        // Instanciando classe CorrecaoCalcioMagnesio
+        var correcaoCalcioMagnesio = new CorrecaoCalcioMagnesio();
+
+        // Memória de Cálculo: F113/G113
+        double quantidade = 1.29;
+        // Equilíbrio e Correção na CTC: H5
+        double ha = 4.84;
+        // Memória de Cálculo: F117/G117
+        double quantidadeTotalCorretivo = correcaoCalcioMagnesio.calculaQuantidadeTotalCorretivo(quantidade, ha);
+        // Equilíbrio e Correção na CTC: K55/L55
+        double valorPorTonelada = 500.00;
+
+        assertEquals(3121.8, correcaoCalcioMagnesio.calculaCustoTotal(quantidadeTotalCorretivo, valorPorTonelada));
+    }
+    
+    @Test
+    public void testaTipoFonte() {
+        // Instanciando classe CorrecaoCalcioMagnesio
+        var correcaoCalcioMagnesio = new CorrecaoCalcioMagnesio();
+
+        // Equilíbrio e Correção na CTC: D52
+        int fonteCorretivo = 2;
+
+        assertEquals("Calcário Calcítico", correcaoCalcioMagnesio.verificaFonte(fonteCorretivo));
     }
     
 }
