@@ -68,13 +68,13 @@ public class TestaCorrecaoCalcioMagnesio {
         // Equilíbrio e Correção na CTC: H11/I11
         double magnesio = 1.63;
         // Equilíbrio e Correção na CTC: L11
-        double hAl = 5.35;
+        double hidrogenioAluminio = 5.35;
         // Memória de Cálculo: I105
         double fosfatagem = 0.017;
 
         // Memória de Cálculo
 
-        assertEquals(55.114416774, correcaoCalcioMagnesio.calculaValorDeCorrecaoCalcio(calcio, potassio, magnesio, hAl,
+        assertEquals(55.114416774, correcaoCalcioMagnesio.calculaValorDeCorrecaoCalcio(calcio, potassio, magnesio, hidrogenioAluminio,
                 fosfatagem, participacaoCTCExistente, participacaoCTCDesejada));
     }
     

@@ -1,6 +1,6 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
-public class VerificaFonte implements Verificacao<int, String> {
+public class VerificaFonte implements Verificacao<Int, String> {
     // (Memória de Cálculo) Método para Verificar Fonte
     @Override
     public String verificaFonte(int fonteCorretivo) {
@@ -26,9 +26,6 @@ public class VerificaFonte implements Verificacao<int, String> {
                 break;
             case 7:
                 fonte = "";
-                break;
-            default:
-                throw new IllegalArgumentException();
                 break;
         }
         return fonte;
