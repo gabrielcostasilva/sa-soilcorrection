@@ -114,12 +114,12 @@ public class TestaCorrecaoCalcioMagnesio {
     @Test
     public void testaTipoFonte() {
         // Instanciando classe CorrecaoCalcioMagnesio
-        var correcaoCalcioMagnesio = new CorrecaoCalcioMagnesio();
+        var verificacao = new VerificaFonte();
 
         // Equilíbrio e Correção na CTC: D52
         int fonteCorretivo = 2;
 
-        assertEquals("Calcário Calcítico", correcaoCalcioMagnesio.verificaFonte(fonteCorretivo));
+        assertEquals("Calcário Calcítico", verificacao.verificaFonte(fonteCorretivo));
     }
     
 }
