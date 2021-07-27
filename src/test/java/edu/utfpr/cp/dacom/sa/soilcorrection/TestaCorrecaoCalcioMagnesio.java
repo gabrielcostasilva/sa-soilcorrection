@@ -49,4 +49,19 @@ public class TestaCorrecaoCalcioMagnesio {
             0.5);
     }
 
+    @Test
+    public void testaQtdeAplicar() {
+
+        double qtdeFonteAdicionar = 1.291755;
+        double prntPercent = 0.7;
+
+        assertEquals(1.85, 
+            new CorrecaoCalcioMagnesio()
+                .calculaQuantidadeAplicar(
+                    qtdeFonteAdicionar, 
+                    prntPercent),
+            0.05);
+
+    }
+
 }
