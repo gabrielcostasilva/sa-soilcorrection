@@ -21,4 +21,32 @@ public class TestaCorrecaoCalcioMagnesio {
             0.5);
     }
 
+    @Test
+    public void testaNutrientesAdicionais() {
+
+        var correcaoCalcioMagnesio = new CorrecaoCalcioMagnesio();
+        
+        var qtdeCalcioMagnesioAplicarKgHa = 1844.76;
+
+        assertEquals(
+            1, 
+            correcaoCalcioMagnesio.getNutrientesAdicionais(
+                    qtdeCalcioMagnesioAplicarKgHa, 
+                    FonteCalcioMagnesio.GESSO_AGRICOLA)
+                        .size());
+
+        qtdeCalcioMagnesioAplicarKgHa = 3.51 * 10000;
+
+        assertEquals(
+            526.16, 
+            correcaoCalcioMagnesio.getNutrientesAdicionais(
+                qtdeCalcioMagnesioAplicarKgHa, 
+                    FonteCalcioMagnesio.GESSO_AGRICOLA)
+                        .stream()
+                        .findFirst()
+                        .get()
+                        .getCorrecaoAdicional(),
+            0.5);
+    }
+
 }
