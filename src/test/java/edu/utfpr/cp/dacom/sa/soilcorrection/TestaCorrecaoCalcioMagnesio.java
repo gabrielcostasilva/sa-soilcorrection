@@ -35,7 +35,7 @@ public class TestaCorrecaoCalcioMagnesio {
                     FonteCalcioMagnesio.GESSO_AGRICOLA)
                         .size());
 
-        qtdeCalcioMagnesioAplicarKgHa = 3.51 * 10000;
+        qtdeCalcioMagnesioAplicarKgHa = 3.51 * 1000;
 
         assertEquals(
             526.16, 
