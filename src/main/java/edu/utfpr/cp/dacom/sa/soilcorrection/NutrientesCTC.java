@@ -1,5 +1,10 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+
+@Builder
 public record NutrientesCTC (
     double fosforo,
     double potassio,

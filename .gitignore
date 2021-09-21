@@ -23,3 +23,8 @@
 hs_err_pid*
 **/target/
 /nbproject/
+.settings
+.classpath
+.factorypath
+.project
+settings.json
