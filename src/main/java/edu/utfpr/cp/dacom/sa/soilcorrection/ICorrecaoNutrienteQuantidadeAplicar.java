@@ -1,5 +1,7 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.FonteNutrienteInterface.IFonteNutriente;
+
 public interface ICorrecaoNutrienteQuantidadeAplicar<T extends IFonteNutriente> {
     
     public default double calculaQuantidadeAplicar(

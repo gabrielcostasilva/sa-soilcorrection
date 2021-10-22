@@ -2,7 +2,7 @@ package edu.utfpr.cp.dacom.sa.soilcorrection.FonteMaterial;
 
 import java.util.Set;
 
-import edu.utfpr.cp.dacom.sa.soilcorrection.IFonteNutriente;
+import edu.utfpr.cp.dacom.sa.soilcorrection.FonteNutrienteInterface.IFonteNutriente;
 import edu.utfpr.cp.dacom.sa.soilcorrection.NomeNutrienteAdicional;
 import edu.utfpr.cp.dacom.sa.soilcorrection.NutrienteAdicional;
 import lombok.Getter;
