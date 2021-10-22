@@ -2,6 +2,8 @@ package edu.utfpr.cp.dacom.sa.soilcorrection;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.ConverteMaterial.ConverteCMolcDm3EmMgDm3;
+import edu.utfpr.cp.dacom.sa.soilcorrection.ConverteMaterial.ConverteKgHaEmK2O;
 import edu.utfpr.cp.dacom.sa.soilcorrection.CorrecaoMaterial.CorrecaoPotassio;
 import edu.utfpr.cp.dacom.sa.soilcorrection.FonteMaterial.FontePotassio;
 import org.junit.jupiter.api.Test;

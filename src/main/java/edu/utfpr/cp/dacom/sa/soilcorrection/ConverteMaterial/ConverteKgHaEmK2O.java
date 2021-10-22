@@ -1,4 +1,4 @@
-package edu.utfpr.cp.dacom.sa.soilcorrection;
+package edu.utfpr.cp.dacom.sa.soilcorrection.ConverteMaterial;
 
 import edu.utfpr.cp.dacom.sa.soilcorrection.ConversaoInterface.Conversao;
 import lombok.NonNull;
