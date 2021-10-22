@@ -1,7 +1,10 @@
-package edu.utfpr.cp.dacom.sa.soilcorrection;
+package edu.utfpr.cp.dacom.sa.soilcorrection.FonteMaterial;
 
 import java.util.Set;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.IFonteNutriente;
+import edu.utfpr.cp.dacom.sa.soilcorrection.NomeNutrienteAdicional;
+import edu.utfpr.cp.dacom.sa.soilcorrection.NutrienteAdicional;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
@@ -14,7 +17,7 @@ public enum FonteFosforo
         0.18, 
         Set.of(
             new NutrienteAdicional(
-                NomeNutrienteAdicional.ENXOFRE, 0.1), 
+                NomeNutrienteAdicional.ENXOFRE, 0.1),
                 new NutrienteAdicional(NomeNutrienteAdicional.CALCIO, 0.28))),
     SUPERFOSFATO_TRIPO(
         0.41, 
