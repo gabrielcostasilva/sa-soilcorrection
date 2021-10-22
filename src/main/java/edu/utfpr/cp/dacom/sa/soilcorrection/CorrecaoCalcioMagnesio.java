@@ -1,5 +1,6 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.CorrecaoInterface.ICorrecaoNutriente;
 import edu.utfpr.cp.dacom.sa.soilcorrection.FonteMaterial.FonteCalcioMagnesio;
 
 public class CorrecaoCalcioMagnesio

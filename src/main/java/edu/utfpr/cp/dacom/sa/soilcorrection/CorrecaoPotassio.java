@@ -1,11 +1,13 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.CorrecaoInterface.ICorrecaoNutriente;
+import edu.utfpr.cp.dacom.sa.soilcorrection.CorrecaoInterface.ICorrecaoNutrienteQuantidadeAplicar;
 import edu.utfpr.cp.dacom.sa.soilcorrection.FonteMaterial.FontePotassio;
 
 public class CorrecaoPotassio
-        implements 
-            ICorrecaoNutriente<FontePotassio>,
-            ICorrecaoNutrienteQuantidadeAplicar<FontePotassio> {
+        implements
+        ICorrecaoNutriente<FontePotassio>,
+        ICorrecaoNutrienteQuantidadeAplicar<FontePotassio> {
 
     public double calculaNecessidadeAdicionarCMolcDm3 (
         double teorSolo,
