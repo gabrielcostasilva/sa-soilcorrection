@@ -1,4 +1,4 @@
-package edu.utfpr.cp.dacom.sa.soilcorrection;
+package edu.utfpr.cp.dacom.sa.soilcorrection.CorrecaoMaterial;
 
 import edu.utfpr.cp.dacom.sa.soilcorrection.CorrecaoInterface.ICorrecaoNutriente;
 import edu.utfpr.cp.dacom.sa.soilcorrection.CorrecaoInterface.ICorrecaoNutrienteQuantidadeAplicar;

@@ -1,5 +1,6 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.CorrecaoMaterial.CorrecaoFosforo;
 import edu.utfpr.cp.dacom.sa.soilcorrection.FonteMaterial.FonteFosforo;
 import org.junit.jupiter.api.Test;
 
