@@ -1,4 +1,6 @@
-package edu.utfpr.cp.dacom.sa.soilcorrection;
+package edu.utfpr.cp.dacom.sa.soilcorrection.EnumClasses;
+
+import edu.utfpr.cp.dacom.sa.soilcorrection.NutrientesRecords.NutrientesCTC;
 
 public enum TexturaSolo {
     
@@ -26,6 +28,6 @@ public enum TexturaSolo {
 
         }
     };
-    
+
     public abstract NutrientesCTC calculaValorIdeal();
 }
