@@ -1,8 +1,8 @@
-package edu.utfpr.cp.dacom.sa.soilcorrection;
+package edu.utfpr.cp.dacom.sa.soilcorrection.services;
 
 public class EquilibrioCorrecaoCTC {
 
-    double calculaSCmol(
+    public double calculaSCmol(
             double potassio, 
             double calcio, 
             double magnesio) {
@@ -10,7 +10,7 @@ public class EquilibrioCorrecaoCTC {
         return potassio + calcio + magnesio;
     }
 
-    double calculaCTCCmol(
+    public double calculaCTCCmol(
             double potassio, 
             double calcio, 
             double magnesio,
@@ -19,7 +19,7 @@ public class EquilibrioCorrecaoCTC {
         return calculaSCmol(potassio, calcio, magnesio) + hidrogenioAluminio;
     }
 
-    double calculaVPercentual(double Scmol, double CTCcmol) {
+    public double calculaVPercentual(double Scmol, double CTCcmol) {
         
         if (Scmol > 0 && CTCcmol > 0) {
             return Scmol / CTCcmol * 100;
@@ -29,7 +29,7 @@ public class EquilibrioCorrecaoCTC {
         }
     }
 
-    double calculaMOPercentual(double mo) {
+    public double calculaMOPercentual(double mo) {
         if (mo > 0) {
             return mo / 10;
             
@@ -38,7 +38,7 @@ public class EquilibrioCorrecaoCTC {
         }
     }
 
-    double calculaCarbono(double moPercentual) {
+   public double calculaCarbono(double moPercentual) {
         
         if (moPercentual > 0) {
             return moPercentual / 1.72 * 10;

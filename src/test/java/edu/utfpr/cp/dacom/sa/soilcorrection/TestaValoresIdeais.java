@@ -1,7 +1,8 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
-import edu.utfpr.cp.dacom.sa.soilcorrection.EnumClasses.TexturaSolo;
-import edu.utfpr.cp.dacom.sa.soilcorrection.NutrientesRecords.NutrientesCTC;
+import edu.utfpr.cp.dacom.sa.soilcorrection.services.TexturaSolo;
+import edu.utfpr.cp.dacom.sa.soilcorrection.services.NutrientesCTC;
+import edu.utfpr.cp.dacom.sa.soilcorrection.services.EquilibrioCorrecaoCTC;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -19,7 +20,7 @@ public class TestaValoresIdeais {
                                 .aluminio(0.0)
                                 .aluminioHidrogenio(0.0)
                                 .build()
-                                        .fosforo(),
+                                .fosforo(),
                                 TexturaSolo.ARGILOSO.calculaValorIdeal().fosforo());
 
                 assertEquals(NutrientesCTC

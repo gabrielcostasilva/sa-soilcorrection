@@ -2,10 +2,10 @@ package edu.utfpr.cp.dacom.sa.soilcorrection;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import edu.utfpr.cp.dacom.sa.soilcorrection.ConverteMaterial.ConverteCMolcDm3EmMgDm3;
-import edu.utfpr.cp.dacom.sa.soilcorrection.ConverteMaterial.ConverteKgHaEmK2O;
-import edu.utfpr.cp.dacom.sa.soilcorrection.CorrecaoMaterial.CorrecaoPotassio;
-import edu.utfpr.cp.dacom.sa.soilcorrection.FonteMaterial.FontePotassio;
+import edu.utfpr.cp.dacom.sa.soilcorrection.services.ConverteCMolcDm3EmMgDm3;
+import edu.utfpr.cp.dacom.sa.soilcorrection.services.ConverteKgHaEmK2O;
+import edu.utfpr.cp.dacom.sa.soilcorrection.services.CorrecaoPotassio;
+import edu.utfpr.cp.dacom.sa.soilcorrection.services.FontePotassio;
 import org.junit.jupiter.api.Test;
 
 public class TestaCorrecaoPotassio {
