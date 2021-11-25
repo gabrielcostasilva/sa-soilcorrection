@@ -10,15 +10,14 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @Getter
-public enum FonteFosforo 
-        implements IFonteNutriente {
+public enum FonteFosforo implements IFonteNutriente {
 
     SUPERFOSFATO_SIMPLES(
-        0.18, 
+        0.18,
         Set.of(
-            new NutrienteAdicional(
-                NomeNutrienteAdicional.ENXOFRE, 0.1),
-                new NutrienteAdicional(NomeNutrienteAdicional.CALCIO, 0.28))),
+            new NutrienteAdicional(NomeNutrienteAdicional.ENXOFRE, 0.1),
+            new NutrienteAdicional(NomeNutrienteAdicional.CALCIO, 0.28)
+        )),
     SUPERFOSFATO_TRIPO(
         0.41, 
         Set.of(
