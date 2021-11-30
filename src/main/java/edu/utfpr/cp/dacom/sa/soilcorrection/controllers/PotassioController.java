@@ -46,15 +46,15 @@ public class PotassioController {
         double quantidadeAplicar = correcaoPotassio.calculaQuantidadeAplicar(eficienciaNutriente, teorFonte);
 
         String jsonResponse = "{" +
-                "necessidade_adicionar_CMolcDm3: " + necessidadeAdicionarDM3 +
+                "\"necessidade_adicionar_CMolcDm3\": " + necessidadeAdicionarDM3 +
                 "," +
-                "necessidade_adicionar_MgDm3: " + necessidadeAdicionarEmMgDm3 +
+                "\"necessidade_adicionar_MgDm3\": " + necessidadeAdicionarEmMgDm3 +
                 "," +
-                "necessidade_adicionar_KgHa: " + necessidadeAdicionarEmKgHa
+                "\"necessidade_adicionar_KgHa\": " + necessidadeAdicionarEmKgHa
                 + "," +
-                "eficiencia_nutriente: " + eficienciaNutriente +
+                "\"eficiencia_nutriente\": " + eficienciaNutriente +
                 "," +
-                "quantidade_aplicar: "+ quantidadeAplicar +
+                "\"quantidade_aplicar\": "+ quantidadeAplicar +
                 "}";
 
         context.json(jsonResponse);
